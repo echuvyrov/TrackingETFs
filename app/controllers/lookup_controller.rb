@@ -1,0 +1,2 @@
+class LookupController < ApplicationController
+end

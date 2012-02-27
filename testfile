@@ -1,0 +1,8 @@
+require "yahoofinance"
+File.open('test.out','w') do |s|
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2012-02-24' ), 
+                                      Date.today() ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+end

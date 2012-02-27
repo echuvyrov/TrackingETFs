@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pricedate: 2012-02-25
+  price: 9.99
+  fund_id: 1
+
+two:
+  pricedate: 2012-02-25
+  price: 9.99
+  fund_id: 1

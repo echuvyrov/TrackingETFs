@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  FundId: 1
+  TrackableItemId: 1
+
+two:
+  FundId: 1
+  TrackableItemId: 1

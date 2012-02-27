@@ -1,0 +1,2 @@
+class TrackableItemController < ApplicationController
+end

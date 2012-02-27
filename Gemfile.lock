@@ -100,10 +100,14 @@ GEM
       polyglot (>= 0.3.1)
     turn (0.8.3)
       ansi
+    typhoeus (0.3.3)
+      mime-types
     tzinfo (0.3.31)
     uglifier (1.2.2)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    yahoofinance-typhoeus (1.0.0)
+      typhoeus
 
 PLATFORMS
   ruby
@@ -116,3 +120,4 @@ DEPENDENCIES
   sqlite3
   turn
   uglifier (>= 1.0.3)
+  yahoofinance-typhoeus

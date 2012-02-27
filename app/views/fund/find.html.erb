@@ -1,0 +1,11 @@
+<%= @title%>
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+		<%= debug @funds %>
+  		<table class="funds" summary="Matching ETFs">
+    		<%= render @funds %>
+  		</table>
+	</td>
+  </tr>
+</table>

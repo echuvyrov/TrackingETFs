@@ -1,0 +1,75 @@
+require "yahoofinance"
+File.open('test.out','w') do |s|
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-01-24' ), 
+                                      Date.parse( '2011-01-24' )) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-02-24' ), 
+                                      Date.parse( '2011-02-24' )) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-03-24' ), 
+                                      Date.parse( '2011-03-24') ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-04-24' ), 
+                                      Date.parse( '2011-04-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-05-24' ), 
+                                      Date.parse( '2011-05-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-06-24' ), 
+                                      Date.parse( '2011-06-24' )) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-07-24' ), 
+                                      Date.parse( '2011-07-24' )) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-08-24' ), 
+                                      Date.parse( '2011-08-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-09-24' ), 
+                                      Date.parse( '2011-09-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-10-24' ), 
+                                      Date.parse( '2011-10-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-11-24' ), 
+                                      Date.parse( '2011-11-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+
+		YahooFinance::get_historical_quotes( 'YHOO', 
+                                      Date.parse( '2011-12-24' ), 
+                                      Date.parse( '2011-12-24' ) ) do |row|
+  									s.puts "YHOO,#{row.join(',')}"
+		end
+		
+end
