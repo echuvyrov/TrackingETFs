@@ -1,0 +1,8 @@
+<h1>Create new ETF</h1>
+<%= form_for(@fund) do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <%= render 'fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "create" %>
+  </div>  
+<% end %>

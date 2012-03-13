@@ -1,0 +1,17 @@
+<ul class="grid-header">
+	<li>Ticker Symbol</li>
+	<li>ETF Name</li>
+	<li>Tracks</li>
+	<li>Performance</a></li>
+</ul>
+<table class="etflist" summary="ETF List">
+  <tr>
+    <td class="main">
+		<!-- <%= debug @funds %> -->
+  		<table class="funds" summary="Matching ETFs">
+    		<%= render @funds %>
+  		</table>
+		<%= will_paginate @funds %>
+	</td>
+  </tr>
+</table>

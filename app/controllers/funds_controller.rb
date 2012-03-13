@@ -1,7 +1,10 @@
-class FundController < ApplicationController
+class FundsController < ApplicationController
   require "yahoofinance-typhoeus"
   require 'date'
   require 'will_paginate/array'
+  include CommonHelper
+  
+  PageSize = 2
   
   def show
     @fund = Fund.find(params[:id])
@@ -9,40 +12,37 @@ class FundController < ApplicationController
   end
   
   def index
-    funds = Fund.find_all_by_tickersymbol(searchcriteria)
+    funds = Fund.all.paginate(:per_page => PageSize, :page => params[:page])
     funds = getFundDetails(funds)
     @funds = funds
+    
   end
   
   def find
-    if params[:searchcriteria] != nil
-      searchcriteria = params[:searchcriteria].upcase
-
-      logger.info ">>>>>>SEARCHCRITERIA IS NOT NULL<<<<<<"
-    
-      funds = Fund.find_all_by_tickersymbol(searchcriteria)
+    if params[:searchcriteria] == nil or params[:searchcriteria] == ''
+      #if no search criteria passed in, show all funds
+      funds = Fund.all.paginate(:per_page => PageSize, :page => params[:page])
+      searchcriteria =  ''
+      
+    else
+      searchcriteria = params[:searchcriteria].upcase    
+      funds = Fund.find_all_by_tickersymbol(searchcriteria).paginate(:per_page => PageSize, :page => params[:page])
       if funds.count == 0
-        funds = Fund.find_all_by_etfname(searchcriteria)
+        funds = Fund.find_all_by_etfname(searchcriteria).paginate(:per_page => PageSize, :page => params[:page])
         searchedFor = "fund name " + searchcriteria
       else
         searchedFor = "ticker " + searchcriteria
       end
-      
-    else
-      #if no search criteria passed in, show all funds
-      logger.info ">>>>>>SEARCHCRITERIA NULL NULL NULL<<<<<<"
-      funds = Fund.all.paginate(:per_page => 2, :page => params[:page])
-      searchcriteria =  ''
     end
-        
+    
     funds = getFundDetails(funds)
     @funds = funds
   end
-
+  
   def category
     category = params[:name]
     funds = Fund.find_all_by_etftype(category)
-    @funds = getFundDetails(funds).paginate(:per_page => 2, :page => params[:page])
+    @funds = getFundDetails(funds).paginate(:per_page => PageSize, :page => params[:page])
     @title = 'Showing ' + category + ' funds'
   end
 
@@ -52,9 +52,9 @@ class FundController < ApplicationController
   end
   
   def create
-    @fund = User.new(params[:fund])
+    @fund = Fund.new(params[:fund])
     if @fund.save
-      redirect_to @user, :flash => { :success => "Successfully created the new fund." }
+      redirect_to @fund, :flash => { :success => "Successfully created the new fund." }
     else
       @title = "Create new ETF"
       render 'new'
@@ -62,10 +62,12 @@ class FundController < ApplicationController
   end
   
   def edit
+    @fund = Fund.find(params[:id])  
     @title = "Edit ETF"
   end
   
   def update
+     @fund = Fund.find(params[:id]) 
     if @fund.update_attributes(params[:fund])
       redirect_to @fund, :flash => { :success => "ETF updated." }
     else
@@ -77,9 +79,9 @@ class FundController < ApplicationController
   def destroy
     fund = Fund.find( params[:id])
     fund.destroy
-    redirect_to :back, :flash => { :success => "Fund deleted." }
+    redirect_to funds_path, :flash => { :success => "Fund deleted." }
   end
-  
+    
   protected
   
     def getFundDetails(funds)
@@ -92,11 +94,20 @@ class FundController < ApplicationController
         prices = Fund.find_by_tickersymbol(fund.tickersymbol).etf_prices.sort_by{|pd| pd[:pricedate]}
         fund.prices_last12months = Array.new
         fund.pricelabels_last12months = Array.new      
-    
-        prices.each { 
-          |p|
+        month_label = ""
+        
+        logger.debug "Prices: #{prices.inspect}"
+        
+        prices.each_with_index { 
+          |p, i|
           fund.prices_last12months << p.price.to_f
-          fund.pricelabels_last12months << p.pricedate.strftime("%b")
+          #set the labels to be only once a month
+          if month_label != p.pricedate.strftime("%b")
+            fund.pricelabels_last12months << p.pricedate.strftime("%b")
+            month_label = p.pricedate.strftime("%b")  
+          else
+            fund.pricelabels_last12months << ''
+          end
         }      
       }
   
@@ -150,59 +161,4 @@ class FundController < ApplicationController
         end
       }
     end
-    
-    def business_day(date)
-      businessday = skip_weekends(date)
-      skip_holidays(businessday)
-    end
-
-    def skip_weekends(date)
-      while (date.wday % 7 == 0) or (date.wday % 7 == 6) do
-        date += 1
-      end
-      date
-    end
-
-    def skip_holidays(date)
-      #hard code the following stock market holidays and skip them (pull prior dates)
-      #new Years's Eve- January 1st
-      if date.month == 1 and date.day == 1
-        date = date - 3
-      end
-      #Martin Luther King, Jr. Day is always observed on the third Monday in January, make our date the previous Friday
-      if date.month == 1 and date.wday == 1 and date == Date.commercial(date.year, 3, 1) and date.day >= 14
-        date = date - 3
-      end
-      #President's Day is always observed on the third Monday in February, make our date the previous Friday
-      if date.month == 2 and date.wday == 1 and date == Date.commercial(date.year, 3, 2) and date.day >= 14
-        date = date - 3
-      end
-      #Memorial Day is always observed on the last Monday in May, make our date the previous Friday
-      if date.month == 5 and date.wday == 1 and (date + 7).month > date.month
-        date = date - 3
-      end
-      #Independence Day - July 4
-      if date.month == 7 and date.day == 4
-        date = date - 4
-      end
-      #Labor Day - September 2
-      if date.month == 9 and date.day == 2
-        date = date - 4
-      end
-      #Thanksgiving
-      if date.month == 11 and date.wday == 4 and date == Date.commercial(date.year, 4, 4) and date.day >= 21
-        date = date - 1
-      end
-      #Christmas
-      if date.month == 12 and date.wday == 24
-        date = date - 3
-      end
-    
-      #make sure to skip weekends
-      while (date.wday % 7 == 0) or (date.wday % 7 == 6) do
-        date += 1
-      end
-      date
-    end
-  
 end

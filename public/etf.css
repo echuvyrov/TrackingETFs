@@ -886,3 +886,153 @@ a:hover{text-decoration:underline;}
 .sub-nav li a{color:#fff;}
 /* footer end */
 /* wrapper end*/
+/*sub pages start*/
+.subpage-main{
+    background: url(images/bg-promo.gif);
+    border-color:#d0e4d9;
+    border-width:1px 0;
+    border-style:solid;
+    margin-bottom:62px;
+}
+.subpage-main .holder{
+    width:921px;
+    padding:0 0 0 20px;
+    margin:0 auto;
+}
+.subpage-main .holder:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.subpage-main .info{
+    font-size:26px;
+    height:1%;
+    line-height:32px;
+    overflow:hidden;
+    padding-top:42px;
+    width:452px;
+}
+.subpage-main .info.sp{
+    font-size:26px;
+    height:1%;
+    line-height:32px;
+    overflow:hidden;
+    padding-top:56px;
+    width:452px;
+}
+.subpage-main .info.ps{
+    font-size:26px;
+    height:1%;
+    line-height:32px;
+    overflow:hidden;
+    padding-top:56px;
+    width:470px;
+}
+.sub-text{
+    font-family:"TitilliumText22LThin",Verdana,serif;
+    word-spacing:0px;
+}
+.subpage-main .info h2{
+    font:41px/48px "Museo 700",Verdana,serif;
+    letter-spacing:0;
+    margin:0 0 12px;
+    word-spacing:-4px;
+}
+.subpage-main .info p{
+    font-family: "TitilliumText22LThin", Verdana, serif;
+    font-size:25px;
+    letter-spacing:0;
+    margin-bottom:12px;
+    }
+.subpage-main .info.sp h2{
+    font:41px/48px "Museo 700",Verdana,serif;
+    letter-spacing:0;
+    margin:0 0 12px;
+    word-spacing:-2px;
+}
+.subpage-main .info.sp p{
+  font-family: "TitilliumText22LThin", Verdana, serif;
+  font-size:25px;
+  letter-spacing:0;
+  margin-bottom:12px;
+}
+.subpage-main .info.ps h2{
+     font:41px/48px "Museo 700",Verdana,serif;
+     letter-spacing:0;
+     margin:0 0 12px;
+     word-spacing:-2px;
+ }
+.subpage-main .info.ps p{
+    font-family: "TitilliumText22LThin", Verdana, serif;
+    font-size:25px;
+    letter-spacing:0;
+    margin-bottom:12px;
+}
+.grid-header{
+    background:none repeat scroll 0 0 #7aa5e3;
+    border-bottom:9px solid #AAC634;
+    letter-spacing:0;
+    margin-bottom:32px;
+    overflow:hidden;
+    padding:22px 0 16px;
+    width:921px;
+    word-spacing:3px;
+}
+.grid-header li{
+    float:left;
+	min-width:110px;
+    font-size:16px;
+    line-height:20px;
+    padding:0 10px 0 21px;
+}
+.grid-header li:first-child{
+    background:none repeat scroll 0 0 transparent;
+    line-height:21px;
+    }
+.grid-header li a{color:#000;}
+.grid-row{
+    letter-spacing:0;
+    margin-bottom:10px;
+    overflow:hidden;
+    padding:22px 0 16px;
+    width:921px;
+    word-spacing:3px;
+}
+.grid-row li{
+    float:left;
+	width:110px;
+	vertical-align:middle;
+    font-size:15px;
+    line-height:15px;
+    padding:0 5px 0 10px;
+}
+
+.ticker{
+	width: 110px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+    float:left;
+	vertical-align:middle;
+    font-size:15px;
+    line-height:15px;	
+}
+
+.fundname{
+	width: 180px;
+    float:left;
+	vertical-align:middle;
+    font-size:15px;
+    line-height:15px;
+    padding:0 5px 0 5px;
+}
+.chart
+{
+	float:right;
+	width: 440px; 
+	height: 120px;	
+}
+.admin
+{
+	font-weight:normal;
+	font-size:13px;
+}

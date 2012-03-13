@@ -1,0 +1,26 @@
+<ul class="grid-header">
+	<li>Ticker Symbol</li>
+	<li>ETF Name</li>
+	<li>Tracks</li>
+	<li>Performance</a></li>
+</ul>
+<table class="etflist" summary="ETF List">
+  <tr>
+    <td class="main">
+		<!-- <%= debug @funds %> -->
+  		<table class="funds" summary="Matching ETFs">
+    		<%= render @funds %>
+  		</table>
+		<% if admin? %>
+			<div class="newfund">
+	    		<%= link_to "Create New fund", new_fund_path() %>			
+			</div>
+	  	<% end %>		
+	  
+		<div class="paging">
+			<%= will_paginate @funds %>
+		</div>
+	</td>
+  </tr>
+</table>
+

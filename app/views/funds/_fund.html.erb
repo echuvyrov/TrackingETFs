@@ -1,8 +1,55 @@
-<tr>
-  <td class="fund">
-    <span class="ticker"><%= fund.tickersymbol %></span>
-    <span class="name">
-		<%= fund.etfname %>
-    </span>
-  </td>
-</tr>
+<ul class="grid-row">
+	<div class="ticker"><%= fund.tickersymbol %>
+	  <% if admin? %>
+	  <p class="admin">
+		<br/><br/>
+	    <%= link_to "Edit", edit_fund_path(fund) %>
+	    <%= link_to "Destroy", fund, :confirm => "Are you sure?", :method => :delete, :title => "Delete #{fund.etfname}" %>
+	  </p>
+	  <% end %>		
+	</div>
+	<div class="fundname">
+		<%= link_to fund.etfname, fund %>
+	</div>
+	<li>
+		<% for trackable in TrackableItem.find(:all) %>
+		    <div>&nbsp;
+		      <% if fund.trackable_items.include?(trackable) %>
+		      <%= 	trackable.name %>
+			  <% end %>
+		    </div>
+		<% end %>
+	</li>
+	<div id="<%= fund.tickersymbol %>" class="chart"></div>
+	<script type="text/javascript" charset="utf-8">
+	$(function () {
+	  new Highcharts.Chart({
+	    chart: { renderTo: '<%=fund.tickersymbol %>' },
+	    title: { text: '' },
+	    xAxis: { 
+			type: 'date',
+			categories: <%=raw fund.pricelabels_last12months %>		
+		},
+	    yAxis: {
+	      title: { text: 'Dollars'}
+	    },
+	 	tooltip: {
+	      formatter: function () {
+	        return '$' + Highcharts.numberFormat(this.y, 2);}
+		},
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlign: 'top',
+			x: 10,
+			y: 10,
+			borderWidth: 0
+		},
+	    series: [{
+			name: 'Price--',
+	    	data: <%= fund.prices_last12months %>
+	    }]
+	  });
+	});
+	</script>
+</ul>

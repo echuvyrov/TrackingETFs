@@ -1,0 +1,24 @@
+<div class="field">
+	<%= f.label :etfname, "ETF Name" %><br />
+	<%= f.text_field :etfname %>
+</div>
+<div class="field">
+	<%= f.label :tickersymbol, "Ticker Symbol" %><br />
+	<%= f.text_field :tickersymbol %>
+</div>
+<div class="field">
+	<%= f.label :etftype, "ETF Type" %><br />
+	<%= f.text_field :etftype %>
+</div>
+<div class="field">
+	<%= f.label :etforganization_type, "Organization Type" %><br />
+	<%= f.text_field :etforganization_type %>
+</div>
+<div class="field">
+	<% for trackable_item in TrackableItem.find(:all) %>
+	   <div>
+		  	<%= check_box_tag "fund[trackable_item_ids][]", trackable_item.id, @fund.trackable_items.include?(trackable_item) %>
+		  	<%= label_tag "fund[trackable_item_ids][]", trackable_item.name, :for => "fund[trackable_item_ids][]" %><br />		
+		</div>
+	<% end %>
+</div>

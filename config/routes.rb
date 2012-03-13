@@ -1,10 +1,19 @@
 TrackingETFs::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
+  resources :funds
+  resources :sessions,      :only => [:new, :create, :destroy]
+  
   # Sample of regular route:
-     match 'etf/:id' => 'fund#view'
-     match 'search/' => 'fund#find'
+  #match '/home' => 'main_page#home', :as => :home  
+  match '/' => 'pages#home'
+  match 'etf/:id' => 'funds#show'
+  match 'etf/:tickersymbol' => 'funds#ticker'
+  match 'search/' => 'funds#find'
+  match 'dailyprices' => 'dailyprices#index'
+  match 'login', :controller => 'sessions', :action => 'new'
+  match 'logout', :controller => 'sessions', :action => 'destroy'
+  match 'category/:name', :controller => 'funds', :action => 'category'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

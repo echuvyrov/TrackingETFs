@@ -30,6 +30,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'will_paginate'
 gem "yahoofinance-typhoeus"
 
 group :test do
