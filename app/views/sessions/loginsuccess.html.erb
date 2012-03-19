@@ -1,0 +1,7 @@
+<h1>Successfully signed in</h1>
+
+<% if admin? %>
+	<div class="newfund">
+		<%= link_to "Create New fund", new_fund_path() %>			
+	</div>
+<% end %>		
