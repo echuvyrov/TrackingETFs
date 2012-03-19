@@ -5,4 +5,5 @@ class Fund < ActiveRecord::Base
   
   attr_accessor :prices_last12months
   attr_accessor :pricelabels_last12months
+  attr_accessor :performance_percentage
 end

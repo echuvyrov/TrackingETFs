@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     test = session[:password]
     logger.debug "<<<--->>>Checkpoint SESSION = #{test.inspect}<<<--->>>"
     if session != nil
-      return session[:password] == "secret"
+      return session[:password] == "etfftw"
     else
       return false
     end

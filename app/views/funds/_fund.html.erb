@@ -9,15 +9,19 @@
 	  <% end %>		
 	</div>
 	<div class="fundname">
-		<%= link_to fund.etfname, fund %>
+		<%= link_to fund.etfname + " (details)", fund %>
+		<br><br>
+		<% if fund.performance_percentage != nil %> 
+		<%=		@performance_caption + sprintf("%.2f", fund.performance_percentage * 100) %> %
+		<% end %>
 	</div>
 	<li>
 		<% for trackable in TrackableItem.find(:all) %>
-		    <div>&nbsp;
 		      <% if fund.trackable_items.include?(trackable) %>
-		      <%= 	trackable.name %>
+				<div>
+		      	&#149;<%= 	trackable.name %>
+				</div> 
 			  <% end %>
-		    </div>
 		<% end %>
 	</li>
 	<div id="<%= fund.tickersymbol %>" class="chart"></div>

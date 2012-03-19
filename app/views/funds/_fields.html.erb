@@ -1,24 +1,54 @@
-<div class="field">
-	<%= f.label :etfname, "ETF Name" %><br />
-	<%= f.text_field :etfname %>
-</div>
-<div class="field">
-	<%= f.label :tickersymbol, "Ticker Symbol" %><br />
-	<%= f.text_field :tickersymbol %>
-</div>
-<div class="field">
-	<%= f.label :etftype, "ETF Type" %><br />
-	<%= f.text_field :etftype %>
-</div>
-<div class="field">
-	<%= f.label :etforganization_type, "Organization Type" %><br />
-	<%= f.text_field :etforganization_type %>
-</div>
-<div class="field">
-	<% for trackable_item in TrackableItem.find(:all) %>
-	   <div>
-		  	<%= check_box_tag "fund[trackable_item_ids][]", trackable_item.id, @fund.trackable_items.include?(trackable_item) %>
-		  	<%= label_tag "fund[trackable_item_ids][]", trackable_item.name, :for => "fund[trackable_item_ids][]" %><br />		
-		</div>
-	<% end %>
-</div>
+<table>
+<tr>
+	<td>
+		<%= f.label :etfname, "ETF Name" %>
+	</td>
+	<td>
+		<%= f.text_field :etfname %>
+	</td>
+</tr
+<tr>
+	<td>
+		<%= f.label :tickersymbol, "Ticker Symbol" %>
+	</td>
+	<td>
+		<%= f.text_field :tickersymbol %>
+	</td>
+</tr>
+<tr>
+	<td>
+		<%= f.label :etftype, "ETF Type" %>
+	</td>
+	<td>
+		<%= f.collection_select :etftype, EtfType.find(:all), :etftype_name, :etftype_name, :prompt => "Select ETF Type" %>
+	</td>
+</tr>
+<tr>
+	<td>
+		<%= f.label :etforganization_type, "Organization Type" %>
+	</td>
+	<td>
+		<%= f.collection_select :etforganization_type, OrganizationType.find(:all), :etforganization_type, :etforganization_type, :prompt => "Select Organization Type" %>
+	</td>
+</tr>
+<tr>
+	<td>
+		Trackable Items:
+	</td>
+	<td>
+		<% for trackable_item in TrackableItem.find(:all) %>
+	   		<div>
+		  		<%= check_box_tag "fund[trackable_item_ids][]", trackable_item.id, @fund.trackable_items.include?(trackable_item) %>
+		  		<%= label_tag "fund[trackable_item_ids][]", trackable_item.name, :for => "fund[trackable_item_ids][]" %><br />		
+			</div>
+		<% end %>
+	</td>
+</tr>
+<tr>
+	<td>
+		Tax Consequences:
+	</td>
+	<td>
+		<%= f.text_area(:tax_consequences, :cols => 50, :rows => 12) %>
+	</td>
+</table>

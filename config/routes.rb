@@ -10,9 +10,15 @@ TrackingETFs::Application.routes.draw do
   match 'etf/:id' => 'funds#show'
   match 'etf/:tickersymbol' => 'funds#ticker'
   match 'search/' => 'funds#find'
+  match 'about/' => 'funds#about'
   match 'dailyprices' => 'dailyprices#index'
+  match 'top50ytd/' => 'funds#top50ytd'
+  match 'top25month/' => 'funds#top25month'
+  match 'weeksbiggestmovers/' => 'funds#weeksbiggestmovers'
   match 'login', :controller => 'sessions', :action => 'new'
   match 'logout', :controller => 'sessions', :action => 'destroy'
+  match 'login/success', :controller => 'sessions', :action => 'loginsuccess'
+  match 'login/failure', :controller => 'sessions', :action => 'loginfailure'
   match 'category/:name', :controller => 'funds', :action => 'category'
   # Keep in mind you can assign values other than :controller and :action
 

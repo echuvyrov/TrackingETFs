@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120308162639) do
+ActiveRecord::Schema.define(:version => 20120315013939) do
 
   create_table "etf_prices", :force => true do |t|
     t.date     "pricedate"
@@ -19,6 +19,12 @@ ActiveRecord::Schema.define(:version => 20120308162639) do
     t.integer  "fund_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "etf_types", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "etftype_name"
   end
 
   create_table "funds", :force => true do |t|
@@ -30,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20120308162639) do
     t.string   "etftype"
     t.string   "etforganization_type"
     t.string   "etfsubtype"
+    t.text     "tax_consequences"
   end
 
   create_table "funds_trackable_items", :id => false, :force => true do |t|
@@ -44,6 +51,10 @@ ActiveRecord::Schema.define(:version => 20120308162639) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "organization_types", :force => true do |t|
+    t.string "etforganization_type"
   end
 
   create_table "trackable_items", :force => true do |t|
