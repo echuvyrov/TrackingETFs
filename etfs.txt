@@ -1,0 +1,203 @@
+HOLDRS Broadband,BDH,13.62,503.4,15500
+SPDR KBW Capital Markets ETF,KCE,34.26,458.7,70300
+PowerShares Water Resource Port ETF,PHO,19.07,122.7,308600
+PowerShares S&P SmallCap Energy Portfolio ETF,PSCE,38.79,113.1,48700
+First Trust Energy AlphaDEX Fund ETF,FXN,21.54,108.2,60700
+iShares Dow Jones Transportation Average Index Fund ETF,IYT,95.50,107.7,1087700
+PowerShares Dynamic Oil Services ETF,PXJ,22.09,100.4,88600
+PowerShares Dynamic Build & Construction ETF,PKB,14.24,98.1,21600
+iShares Russell Top 200 Growth Index Fund ETF,IWY,35.04,95.5,121300
+PowerShares Dynamic LargeCap Growth ETF,PWB,18.38,70.4,72800
+SPDR S&P Oil & Gas Equipment & Services ETF,XES,38.54,66.8,196900
+PowerShares FTSE RAFI US 1500 Small-Mid Portfolio ETF,PRFZ,68.25,64.8,58000
+Rydex 2x S&P 500 ETF ETF,RSU,49.63,62.7,47000
+PowerShares S&P,PIV,14.97,61.7,119800
+iShares Russell Top 200 Value Index Fund ETF,IWX,30.44,60.1,25200
+HOLDRS Internet,IIH,3.30,56.1,10900
+ProShares UltraShort Consumer Services ETF,SCC,12.52,55.8,12400
+iShares Dow Jones U.S. Financial Services Index Fund ETF,IYG,57.17,52.4,73400
+ProShares UltraShort SmallCap600 ETF,SDD,30.40,49.8,10300
+iShares Dow Jones U.S. Technology Index Fund ETF,IYW,76.85,47.3,218300
+iShares Goldman Sachs Technology Index Fund ETF,IGM,70.11,45.4,25800
+HOLDRS B2B Inter,BHH,0.95,44.5,234200
+PowerShares Fundamental Pure Small Growth Portfolio ETF,PXSG,17.92,40.7,11400
+ProShares Short Russell2000 ETF,RWM,26.11,37.4,1337400
+ProShares Ultra SmallCap600 ETF,SAA,51.90,34.9,16600
+PowerShares Dynamic Banking ETF,PJB,13.57,34.8,4600
+ProShares UltraPro Short Russell2000 ETF,SRTY,8.91,29.6,1119800
+iShares Russell 2000 Value ETF,IWN,73.17,29.6,2080200
+PowerShares Dynamic Energy E&P ETF,PXE,26.38,29.2,29900
+iShares Russell Midcap Index Fund ETF,IWR,111.37,29.1,391500
+ProShares Short QQQ ETF,PSQ,26.07,28.6,857200
+PowerShares S&P SmallCap Info Tech ETF,PSCT,31.39,27.7,57400
+SPDR Consumer Discretionary Select Sector Fund ETF,XLY,44.35,26.3,5414200
+Rydex S&P MidCap 400 Pure Growth ETF,RFG,89.76,24.9,66400
+iShares Dow Jones U.S. Real Estate Index Fund ETF,IYR,62.20,24.9,6368500
+iShares Dow Jones U.S. Health Care Index Fund ETF,IYH,76.92,24.3,63500
+iShares Dow Jones U.S. Energy Sector Fund ETF,IYE,43.33,24.3,183500
+PowerShares WilderHill Clean Energy Portfolio ETF,PBW,5.82,24.0,271200
+SPDR S&P Retail ETF,XRT,61.00,23.6,6639000
+SPDR Industrial Select Sector Fund ETF,XLI,37.98,23.2,14365400
+ProShares UltraPro Short Dow30 ETF,SDOW,19.20,23.0,761600
+ProShares UltraShort MidCap400 ETF,MZZ,28.94,23.0,108600
+iShares Cohen & Steers Realty Major ETF,ICF,76.15,21.8,518700
+SPDR S&P Oil & Gas Exploration & Production ETF,XOP,60.64,21.5,4656400
+iShares S&P 500 Growth Index Fund ETF,IVW,75.14,17.3,498600
+ProShares UltraShort Russell2000 Growth ETF,SKK,26.95,17.2,14100
+SPDR Financial Select Sector Fund ETF,XLF,15.72,16.2,79410500
+iShares Dow Jones U.S. Medical Devices Index Fund ETF,IHI,67.86,14.6,78000
+ProShares UltraPro Dow30 ETF,UDOW,167.72,14.5,161300
+ProShares UltraShort Real Estate ETF,SRS,30.21,14.5,340300
+SPDR KBW Bank ETF,KBE,24.24,13.5,3966700
+ProShares UltraShort QQQ ETF,QID,31.32,13.2,4945500
+Market Vectors TR Gold Miners ETF,GDX,49.93,12.2,13949100
+iShares Dow Jones U.S. Oil & Gas Exploration & Production Index Fund ETF,IEO,70.06,12.0,166300
+Direxion Small Cap Bear 3x Shares ETF,TZA,17.90,11.6,25043100
+ProShares UltraShort Basic Materials ETF,SMN,14.73,11.6,475000
+ProShares Ultra Russell2000 ETF,UWM,43.72,11.5,2215100
+ProShares UltraShort Oil & Gas ETF,DUG,21.33,11.4,567700
+ProShares UltraShort Russell2000 ETF,TWM,29.79,11.2,2478300
+SPDR S&P Metals and Mining ETF,XME,50.95,10.5,3831200
+Market Vectors Semiconductor ETF,SMH,35.28,9.0,1728800
+iShares S&P MidCap 400 Growth Index Fund ETF,IJK,112.97,8.4,186300
+iShares (Canada) DEX HYBrid Bond Index Fund ETF,XHB,21.51,8.3,7438500
+SPDR Energy Select Sector Fund ETF,XLE,74.80,7.4,14945600
+SPDR S&P Dividend ETF,SDY,56.55,7.0,1260600
+ProShares Short SmallCap600 ETF,SBB,22.58,6.0,21900
+iShares (Canada) DEX Long Term Bond Index Fund ETF,XLB,37.10,5.8,9454800
+Direxion Daily Semiconductor Bear 3x Shares ETF,SOXS,30.84,5.7,171200
+iShares Dow Jones U.S. Oil Equipment & Services Index Fund ETF,IEZ,57.68,5.7,180300
+ProShares Ultra Real Estate ETF,URE,60.85,5.6,324100
+iShares Dow Jones U.S. Home Construction Index Fund ETF,ITB,15.21,5.1,1849100
+First Trust Large Cap Core AlphaDEX ETF,FEX,30.52,5.0,96300
+Direxion Large Cap Bear 3x Shares ETF,BGZ,20.35,4.8,1456900
+iShares Russell 2000 ETF,IWM,83.00,4.7,52490200
+ProShares UltraPro QQQ ETF,TQQQ,114.39,3.8,955600
+PowerShares S&P 500 BuyWrite Portfolio ETF,PBP,20.53,3.6,91600
+Rydex S&P 500 Pure Value ETF,RPV,33.13,3.5,40700
+First Trust ISE-Revere Natural Gas ETF,FCG,19.06,2.3,433900
+ProShares UltraPro Short QQQ ETF,SQQQ,11.34,2.0,2120400
+ProShares Short MidCap400 ETF,MYY,26.87,1.9,26700
+ProShares UltraShort S&P500 ETF,SDS,15.20,1.7,17960900
+SPDR Dow Jones Industrial Average ETF,DIA,132.05,1.6,6463900
+PowerShares Dynamic Networking ETF,PXQ,28.03,1.0,47900
+Rydex Inverse 2x S&P 500 ETF,RSW,24.67,0.1,48700
+WisdomTree LargeCap Dividend Fund ETF,DLN,53.11,0.0,157200
+SPDR S&P MidCap 400 ETF,MDY,181.74,-0.1,2453800
+SPDR Technology Select Sector Fund ETF,XLK,29.88,-0.2,9773700
+iShares Russell Microcap Index Fund ETF,IWC,50.87,-0.7,123900
+ProShares Ultra QQQ ETF,QLD,115.36,-1.8,3367300
+PowerShares QQQ Trust ETF,QQQ,66.52,-3.4,48989500
+ProShares Ultra Financials ETF,UYG,62.54,-3.6,1105600
+iShares Dow Jones U.S. Financial Sector Index Fund ETF,IYF,58.42,-3.7,330000
+iShares S&P SmallCap 600 Growth Index Fund ETF,IJT,82.18,-3.7,150400
+Powershares FTSE RAFI US 1000 Portfolio ETF,PRF,60.71,-4.3,119600
+SPDR S&P 500 ETF,SPY,140.30,-4.4,142949000
+iShares S&P 500 Index Fund ETF,IVV,141.41,-4.4,3518200
+PowerShares BLDRS Emerging Markets 50 ADR Index Fund ETF,ADRE,43.17,-4.7,45800
+First Trust DJ Internet Index Fund ETF,FDN,36.55,-5.1,108700
+Direxion Daily Semiconductor Bull 3x Shares ETF,SOXL,43.10,-5.3,357500
+First Trust S&P REIT Index Fund ETF,FRI,16.87,-5.3,186400
+PowerShares Fundamental Pure Mid Growth Portfolio ETF,PXMG,23.04,-5.9,14100
+ProShares UltraShort Dow30 ETF,DXD,12.78,-6.6,1666300
+ProShares UltraShort Technology ETF,REW,34.69,-6.8,16700
+iShares Dow Jones U.S. Consumer Index Fund ETF,IYC,80.13,-7.5,25000
+iShares Russell 1000 ETF,IWB,78.12,-8.3,1273200
+PowerShares Dividend Achievers ETF,PEY,9.43,-8.7,542100
+ProShares Ultra Dow30 ETF,DDM,70.91,-9.4,840700
+ProShares Ultra S&P500 ETF,SSO,58.18,-10.0,7223400
+ProShares Ultra Oil & Gas ETF,DIG,51.59,-10.0,359200
+iShares Russell 3000 ETF,IWV,83.49,-10.4,283400
+iShares Dow Jones Select Dividend Index Fund ETF,DVY,56.26,-10.6,1315100
+SPDR Health Care Select Sector Fund ETF,XLV,36.85,-10.7,5033300
+iShares Goldman Sachs Software Index Fund ETF,IGV,65.23,-10.8,75300
+ProShares UltraShort Financials ETF,SKF,40.91,-11.1,1062900
+ProShares UltraPro Short S&P500 ETF,SPXU,9.17,-11.5,8769800
+iShares Russell 2000 Growth ETF,IWO,95.55,-11.6,1604000
+iShares Russell Midcap Growth Index ETF,IWP,63.00,-11.7,610700
+ProShares Ultra Basic Materials ETF,UYM,39.19,-11.8,445800
+ProShares Ultra Semiconductors ETF,USD,44.64,-12.5,27000
+ProShares Short S&P500 ETF,SH,35.86,-12.6,2406500
+First Trust Value Line 100 Fund ETF,FVL,13.91,-12.6,11800
+ProShares Short Dow30 ETF,DOG,35.45,-12.9,441500
+Market Vectors Bank and Brokerage ETF,RKH,44.49,-13.0,18100
+SPDR Consumer Staples Select Sector Fund ETF,XLP,33.60,-14.4,6086000
+SPDR Dow Jones REIT ETF,RWR,69.79,-14.6,203500
+iShares FTSE NAREIT Mortgage REITs Index Fund ETF,REM,13.87,-16.0,234900
+WisdomTree Trust SmallCap Dividend Fund ETF,DES,49.48,-16.2,40300
+ProShares Ultra Technology ETF,ROM,84.67,-17.6,34800
+iShares Dow Jones U.S. Regional Banks Index Fund ETF,IAT,24.94,-17.8,57200
+PowerShares Zacks Micro Cap ETF,PZI,11.47,-18.1,24200
+iShares S&P 100 Index Fund ETF,OEF,64.08,-18.5,474100
+First Trust NASDAQ-100-Technology Sector Index Fund ETF,QTEC,28.42,-19.9,55400
+ProShares UltraPro S&P500 ETF,UPRO,84.39,-20.3,2261800
+iShares PHLX SOX Semiconductor Sector Index Fund ETF,SOXX,59.20,-20.4,271500
+Direxion Small Cap Bull 3x Shares ETF,TNA,62.40,-20.5,13817200
+SPDR KBW Regional Banking ETF,KRE,28.83,-20.5,2963000
+First Trust Mid Cap Core AlphaDEX ETF,FNX,37.04,-21.6,69500
+Guggenheim Insider Sentiment ETF,NFO,35.16,-21.8,17100
+iShares Russell 1000 Growth ETF,IWF,65.93,-22.0,1985200
+Rydex S&P 500 Pure Growth ETF,RPG,48.73,-22.4,49000
+iShares S&P MidCap 400 Value Index Fund ETF,IJJ,86.50,-22.5,165500
+PowerShares DWA Technical Leaders Portfolio ETF,PDP,27.12,-22.6,114800
+iShares Dow Jones U.S. Utilities Index Fund ETF,IDU,86.39,-22.7,55700
+First Trust Materials AlphaDEX Fund ETF,FXZ,25.30,-22.8,104500
+WisdomTree High-Yielding Equity Fund ETF,DHS,45.05,-23.2,72300
+iShares Dow Jones U.S. Broker-Dealers Index Fund ETF,IAI,25.58,-23.4,37900
+iShares S&P SmallCap 600 Index Fund ETF,IJR,76.20,-24.6,1278900
+Rydex S&P Equal Weight ETF,RSP,52.09,-24.7,481900
+iShares Russell 1000 Value ETF,IWD,70.57,-25.0,1554800
+iShares Dow Jones U.S. Aerospace & Defense Index Fund ETF,ITA,67.69,-25.0,11300
+SPDR KBW Insurance ETF,KIE,41.78,-26.0,88400
+First Trust Cons. Discret. AlphaDEX ETF,FXD,22.92,-26.5,182200
+SPDR S&P Biotech ETF,XBI,78.48,-26.6,214900
+iShares Dow Jones U.S. Industrial Sector Index Fund ETF,IYJ,72.37,-26.7,49900
+SPDR Utilities Select Sector Fund ETF,XLU,34.78,-27.0,5939200
+Market Vectors Oil Services ETF,OIH,43.82,-27.3,3707800
+ProShares UltraShort Semiconductors ETF,SSG,33.41,-27.4,42000
+iShares Goldman Sachs Network Index Fund ETF,IGN,30.53,-27.9,67000
+First Trust ISE Chindia ETF,FNI,22.49,-29.3,16900
+First Trust DJ Select MicroCap ETF,FDM,22.27,-29.6,10000
+ProShares Short Financials ETF,SEF,31.11,-29.8,55100
+ProShares UltraPro Russell2000 ETF,URTY,69.19,-30.9,569200
+Market Vectors Steel Index ETF Fund ETF,SLX,55.43,-31.1,86800
+First Trust Large Cap Value Opportunities AlphaDEX Fund ETF,FTA,30.26,-32.3,43400
+Direxion Large Cap Bull 3x Shares ETF,BGU,85.93,-32.5,779600
+SPDR S&P Semiconductor ETF,XSD,52.40,-32.8,25000
+WisdomTree Dividend Top 100 Fund ETF,DTN,55.26,-33.2,143600
+First Trust Small Cap Core AlphaDEX ETF,FYX,33.30,-33.7,47300
+Rydex S&P SmallCap 600 Pure Value ETF,RZV,41.15,-34.1,18200
+First Trust VL Dividend ETF,FVD,16.95,-34.2,132800
+iShares Goldman Sachs Natural Resources Index Fund ETF,IGE,41.17,-35.1,146300
+iShares Nasdaq Biotechnology ETF,IBB,121.01,-35.3,526800
+Market Vectors Retail ETF,RTH,41.41,-35.5,271200
+iShares Dow Jones U.S. Basic Materials Index ETF,IYM,71.41,-35.6,260000
+iShares S&P MidCap 400 Index Fund ETF,IJH,100.05,-36.3,760800
+REVENUESHARES MID CAP FUND ETF,RWK,32.33,-36.6,19000
+ProShares Ultra Russell2000 Growth ETF,UKK,50.58,-36.7,8300
+iShares S&P 500 Value Index Fund ETF,IVE,65.35,-37.9,357200
+PowerShares Dynamic Leisure & Entertainment Portfolio ETF,PEJ,21.59,-38.2,17800
+SPDR S&P Pharmaceuticals ETF,XPH,55.59,-39.1,57000
+Market Vectors Pharmaceutical ETF,PPH,38.01,-39.6,181100
+iShares Morningstar Large Core Index Fund ETF,JKD,80.05,-40.0,13900
+WisdomTree MidCap Dividend Fund ETF,DON,56.87,-42.6,30600
+iShares S&P SmallCap 600 Values Index Fund ETF,IJS,78.65,-42.8,264300
+PowerShares Intl Dividend Achievers ETF,PID,15.50,-43.2,194000
+iShares Russell 3000 Value ETF,IWW,92.38,-43.5,20200
+PowerShares Dynamic LargeCap Value ETF,PWV,20.65,-44.4,57200
+iShares Russell 3000 Growth ETF,IWZ,53.72,-45.8,32600
+First Trust Financials AlphaDEX ETF,FXO,15.52,-46.3,98500
+PowerShares Dynamic Pharmaceuticals ETF,PJP,30.76,-46.4,71200
+First Trust Large Cap Growth Opportunities AlphaDEX Fund ETF,FTC,29.94,-46.4,20200
+ProShares Ultra MidCap400 ETF,MVV,71.76,-48.2,163000
+First Trust Technology AlphaDEX ETF,FXL,23.48,-48.6,101300
+PowerShares Dynamic Food & Beverage ETF,PBJ,19.70,-53.0,63100
+iShares Dow Jones U.S. Telecommunications Index Fund ETF,IYZ,22.64,-54.3,290000
+PowerShares Dynamic Biotech &Genome ETF,PBE,22.41,-56.2,15300
+First Trust Amex Biotech Index Fund ETF,FBT,40.13,-56.9,75400
+iShares Russell Midcap Value Index ETF,IWS,48.58,-57.5,290500
+First Trust Morningstar ETF,FDL,17.84,-61.2,200900
+REVENUESHARES LARGE CAP FUND ETF,RWL,26.23,-67.1,15600
+REVENUESHARES SMALL CAP FUND ETF,RWJ,36.29,-67.3,14000
+PowerShares Dividend Achievers ETF,PFM,15.75,-69.2,112900
+iShares Dow Jones U.S. Health Care Providers Index Fund ETF,IHF,65.39,-75.2,27200

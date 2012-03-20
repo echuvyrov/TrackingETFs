@@ -8,9 +8,7 @@
   <tr>
     <td class="main">
 		<!-- <%= debug @funds %> -->
-  		<table class="funds" summary="Matching ETFs">
-    		<%= render @funds %>
-  		</table>
+    	<%= render @funds %>
 		<% if admin? %>
 			<div class="newfund">
 	    		<%= link_to "Create New fund", new_fund_path() %>			
