@@ -1,4 +1,21 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, button {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align: baseline; background:none;}
+body.ie6 #goodAntiAliasing,
+body.ie7 #goodAntiAliasing,
+body.ie8 #goodAntiAliasing {
+	background-color: white;
+}
+
+#goodAntiAliasing {
+	opacity: 0.5;
+
+        /* IE 8: yes, it is ugly but it has to be on one line. :-( */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+
+        /* IE 6,7 is more flexible: it can be on multiple lines. */
+	filter: progid:DXImageTransform.Microsoft.Chroma(color='white')
+                progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+}
 ol, ul {list-style:none;}
 h1, h2, h3, h4, h5, h6, li {line-height:100%;}
 blockquote, q {quotes:none;}
