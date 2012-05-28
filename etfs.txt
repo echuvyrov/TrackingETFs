@@ -1,4 +1,4 @@
-HOLDRS Broadband,BDH,13.62,503.4,15500
+HOLDRS Broadband ,BDH,13.62,503.4,15500
 SPDR KBW Capital Markets ETF,KCE,34.26,458.7,70300
 PowerShares Water Resource Port ETF,PHO,19.07,122.7,308600
 PowerShares S&P SmallCap Energy Portfolio ETF,PSCE,38.79,113.1,48700
